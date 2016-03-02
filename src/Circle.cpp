@@ -1,8 +1,8 @@
 //
 //  Circle.cpp
-//  MEA_OF
+//  MEA_OF2
 //
-//  Created by Miyeon Kim2 on 3/1/16.
+//  Created by Alexandria Smith on 3/2/16.
 //
 //
 
@@ -21,7 +21,7 @@ Circle::Circle() {
 void Circle::setup(float _x, float _y) {
     counter = 0;
     ofSetCircleResolution(50);
-//    ofBackground(255,255,255);
+    //    ofBackground(255,255,255);
     bSmooth = false;
     ofSetFrameRate(60);
     xPos = _x;
@@ -29,19 +29,26 @@ void Circle::setup(float _x, float _y) {
     
     
 }
+void Circle::keyPressed(int key){
+    if (key == '1'){
+
+    }
+    
+}
 
 void Circle::draw() {
     ofSetColor(130, 70, 190, 80);
     float radius = 80 +50 * sin(counter);
     ofFill();
-    ofDrawCircle(ofGetWidth()/2, ofGetHeight()/2, radius);
+    ofCircle(ofGetWidth()/2, ofGetHeight()/2, radius);
     
     ofSetColor(130, 170, 40, 80);
     ofNoFill();
-    ofDrawCircle(ofGetWidth()/2, ofGetHeight()/2, 80);
+    ofCircle(ofGetWidth()/2, ofGetHeight()/2, 80);
     
     
 }
+
 
 void Circle::update() {
     counter = counter + 0.02f;

@@ -1,8 +1,8 @@
 //
 //  Particle.hpp
-//  MEA_OF
+//  MEA_OF2
 //
-//  Created by Miyeon Kim2 on 2/29/16.
+//  Created by Alexandria Smith on 3/2/16.
 //
 //
 

@@ -1,8 +1,8 @@
 //
 //  Circle.hpp
-//  MEA_OF
+//  MEA_OF2
 //
-//  Created by Miyeon Kim2 on 3/1/16.
+//  Created by Alexandria Smith on 3/2/16.
 //
 //
 
@@ -28,4 +28,5 @@ public:
     void setup(float _x, float _y);
     void update();
     void draw();
+    void keyPressed(int key);
 };
